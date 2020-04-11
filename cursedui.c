@@ -65,7 +65,7 @@ rendermenu(Menu *menu, WINDOW *win, int useValues)
     werase(win);
     getmaxyx(win, winheight, winwidth);
     startln = menu->curitem - winheight / 2;
-    startln = startln < 0 ? 0 : startln;
+    startln = startln < 0 ? 0 : startln > menu->length - winheight ? menu->length - winheight : startln;
     for (int i = startln; i < menu->length && i  < startln + winheight; i++) {
         if (i == menu->curitem) wattron(win, A_STANDOUT);
         if (useValues) {
