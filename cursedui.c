@@ -4,6 +4,7 @@
 #include <errno.h>
 #include <ncurses.h>
 #include <regex.h>
+#include <locale.h>
 
 #define _POSIX_C_SOURCE 200809L
 
@@ -119,6 +120,7 @@ char
     char *retval = NULL;
     char filterstr[2048];
     FILE *tty = fopen("/dev/tty", "r+"); // Bypass I/O redirection
+    setlocale(LC_ALL, "");
     SCREEN *scr = newterm(NULL, tty, tty);
     WINDOW *winmenu = newwin(LINES - 1, COLS, 0, 0);
     WINDOW *winprompt = newwin(1, 0, LINES - 1, 0);
