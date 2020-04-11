@@ -1,0 +1,105 @@
+	    | 
+	    |                W E L C O M E   T O   B I T R E I C H . O R G
+	    | 
+	    | _______________________________P_R_O_J_E_C_T______________________________
+gopher://bitreich.org:70/0/documents/bitreich-manifesto.md	FILE+ Bitreich Manifesto
+gopher://bitreich.org:70/0/documents/bitreich-organisation.md	FILE+ Bitreich Organisation
+gopher://bitreich.org:70/0/documents/bitreich-branches.md	FILE+ Bitreich Branches
+gopher://bitreich.org:70/0/documents/bitreich-chronicles.md	FILE+ Bitreich Chronicles
+gopher://bitreich.org:70/0/documents/bitreich-qa.md	FILE+ Bitreich Quality Assurance
+	    | 
+gopher://bitreich.org:70/1/scm	 DIR+ Bitreich Projects (git)
+gopher://bitreich.org:70/1/releases	 DIR+ Bitreich Releases
+URL:ftp://ftp@bitreich.org/releases	HTML+ Bitreich Releases (via FTP)
+	    | 
+gopher://bitreich.org:70/1/con	 DIR+ Bitreich Conferences
+gopher://bitreich.org:70/1/end-year-meeting	 DIR+ Bitreich End-Year-Meetings
+	    | 
+gopher://bitreich.org:70/1/radio	 DIR+ Bitreich Radio
+gopher://bitreich.org:70/1/cooking	 DIR+ Bitreich Cooking
+gopher://bitreich.org:70/1/press	 DIR+ Bitreich In The News
+	    | 
+	    | Browse bitreich.org gopher using tor (You need your computer to be configured
+	    | to proxy .onion URIs accordingly with for example torsocks(1).):
+gopher://hg6vgqziawt5s4dj.onion:70/1/	 DIR+ Bitreich Onion Service
+	    | 
+	    | ________________________N_E_W_S__A_G_G_R_E_G_A_T_O_R______________________
+gopher://bitreich.org:70/0/usr/20h/phlog/2020-04-04T14-21-53-536542.md	FILE+ 2020-04-04 – »Brcon 2020 is coming on 2nd to 3rd of May« by 20h
+gopher://bitreich.org:70/0/usr/20h/phlog/2020-03-27T14-18-36-239541.md	FILE+ 2020-03-27 – »Bitreich Radio now relaying Coronavi.be« by 20h
+gopher://bitreich.org:70/0/usr/20h/phlog/2020-03-25T17-38-01-598848.md	FILE+ 2020-03-25 – »1<<10 party aftermath, .meme file format« by 20h
+gopher://bitreich.org:70/0/usr/20h/phlog/2020-03-21T20-31-09-276054.md	FILE+ 2020-03-21 – »Bitreichcon 2020 will go full-online due to corona virus.« by 20h
+	    | 
+gopher://bitreich.org:70/1/news.gph	 DIR+ See all news
+gopher://bitreich.org:70/0/news.atom.xml	FILE+ Atom news feed
+	    | _____________________________C_O_M_M_U_N_I_T_Y____________________________
+gopher://bitreich.org:70/1/usr	 DIR+ Member Profiles
+	    | 
+	    | Come and join us on IRC!
+URL:ircs://chat.freenode.net:6697/#bitreich-en	HTML+ English:    ircs://chat.freenode.net:6697/#bitreich-en
+URL:ircs://chat.freenode.net:6697/#bitreich-de	HTML+ Deutsch:    ircs://chat.freenode.net:6697/#bitreich-de
+URL:ircs://chat.freenode.net:6697/#bitreich-fr	HTML+ Français:   ircs://chat.freenode.net:6697/#bitreich-fr
+URL:ircs://chat.freenode.net:6697/#bitreich-nl	HTML+ Nederlands: ircs://chat.freenode.net:6697/#bitreich-nl
+	    | 
+	    | To follow the source code changes, join:
+URL:ircs://chat.freenode.net:6697/#bitreich-scm	HTML+ ircs://chat.freenode.net:6697/#bitreich-scm
+	    | 
+	    | Other channels you might like to join:
+URL:ircs://chat.freenode.net:6697/#bitreich-con	HTML+ Conference: ircs://chat.freenode.net:6697/#bitreich-con
+URL:ircs://chat.freenode.net:6697/#bitreich-cooking	HTML+ Cooking:    ircs://chat.freenode.net:6697/#bitreich-cooking
+URL:ircs://chat.freenode.net:6697/#bitreich-radio	HTML+ Radio:      ircs://chat.freenode.net:6697/#bitreich-radio
+URL:ircs://chat.freenode.net:6697/#bitreich-lawn	HTML+ Lawn:       ircs://chat.freenode.net:6697/#bitreich-lawn
+	    | 
+	    | 
+	    | There is no code of conduct, we have the human rights.
+gopher://bitreich.org:70/0/hacker-manifesto.txt	FILE+ Hacker Manifesto
+	    | 
+	    | ________________________________G_O_P_H_E_R_______________________________
+	    | Help us building a nice sorted directory of the gopherspace:
+gopher://bitreich.org:70/1/lawn	 DIR+ THE GOPHER LAWN – THE gopher directory
+	    | 
+gopher://bitreich.org:70/1/tutorials	 DIR+ Gopher Tutorials Project
+	    | 
+	    | Run more gopherholes on tor!
+gopher://bitreich.org:70/1/onion	 DIR+ The Gopher Onion Initiative
+	    | 
+gopher://bitreich.org:70/1/kiosk	 DIR+ You are missing a gopher client? Use our kiosk mode.
+URL:ssh://kiosk@bitreich.org	HTML+ ssh kiosk@bitreich.org
+	    | 
+	    | Further gopherspace links:
+gopher://gopherproject.org:70/1/	 DIR+ The Gopher Project
+gopher://gopher.floodgap.com:70/7/v2/vs	   ?+ Search the global gopherspace at Veronica II
+	    | 
+	    | Best viewed using:
+gopher://bitreich.org:70/1/scm/sacc	 DIR+ sacc
+gopher://bitreich.org:70/1/scm/clic	 DIR+ clic
+	    | 
+	    | __________________________________F_U_N___________________________________
+	    | Try out the bitreich point and click adventure.
+gopher://parazyd.org:70/1/dotg	 DIR+ Day Of The GrParazyd (NSFW)
+	    | 
+	    | Want to hang out with your friends or alone?
+URL:ssh://gameroom@bitreich.org	HTML+ ssh gameroom@bitreich.org
+	    | 
+gopher://bitreich.org:70/0/banana	FILE+ Want a banana?
+gopher://bitreich.org:70/0/gunther	FILE+ Gunther is here.
+	    | 
+	    | You feel sick?
+gopher://bitreich.org:70/7/hypochondria	   ?+ Enter your symptoms.
+	    | 
+	    | Do you know your future?
+gopher://parazyd.org:70/1/tarot.dcgi	 DIR+ Ask the cards.
+	    | 
+	    | Are you a plane?
+gopher://bitreich.org:70/1/start	 DIR+ Try to land.
+	    | 
+	    | Have you had a bad day?
+gopher://bitreich.org:70/1/joke	 DIR+ Have a joke.
+	    | 
+telnet://bitreich.org:129	TELN+ What is your IP for me?
+	    | 
+gopher://bitreich.org:70/0/ascii/blockchain.vt	FILE+ Built-in blockchain support.
+gopher://bitreich.org:70/I/stateless-misra.png	 IMG+ We are MISRA-certified.
+gopher://bitreich.org:70/0/ascii/macron.vt	FILE+ We are FRENCH-certified.
+gopher://bitreich.org:70/I/worksonsacc.png	 IMG+ Works on Sacc
+gopher://bitreich.org:70/I/worksonsacc2.png	 IMG+ Works on Sacc
+	    | 

@@ -16,8 +16,13 @@ typedef struct {
     Item *items;
     size_t buflen;
     size_t length;
-    long int curitem;
+    int curitem;
 } Menu;
+
+int readMenu(Menu *menu, FILE *fin);
+int rendermenu(Menu *menu, WINDOW *win, int useValues);
+int filterMenu(Menu *menu, Menu *fmenu, char *filter);
+char *runui(Menu *menu);
 
 int
 readMenu(Menu *menu, FILE *fin)
@@ -33,25 +38,18 @@ readMenu(Menu *menu, FILE *fin)
     menu->curitem = 0;
     while ((readlen = getline(&readbuf, &buflen, fin)) > 0) {
         if (readlen == 0 || readbuf[0] == '\n') continue;
-
-        if (readbuf[readlen - 1] == '\n') {
-            readbuf[readlen - 1] = 0;
-        }
-
+        if (readbuf[readlen - 1] == '\n') readbuf[readlen - 1] = 0;
         if (menu->length == menu->buflen) {
             menu->buflen += 1024;
             menu->items = realloc(menu->items, sizeof(Item) * menu->buflen);
             if (menu->items == NULL) return -1;
         }
-
         if ((tab = strchr(readbuf, '\t')) == NULL) {
             errno = EBADMSG;
             return -1;
         }
-
         *tab = 0;
         tab++;
-
         menu->items[menu->length].value = strdup(readbuf);
         menu->items[menu->length].display = strdup(tab);
         menu->length++;
