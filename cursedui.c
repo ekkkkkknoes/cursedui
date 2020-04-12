@@ -93,7 +93,7 @@ filterMenu(Menu *menu, Menu *fmenu, char *filter)
     }
     regex_t rx;
     int regerr;
-    if ((regerr = regcomp(&rx, filter, REG_EXTENDED | REG_NOSUB)) != 0)
+    if ((regerr = regcomp(&rx, filter, REG_EXTENDED | REG_ICASE | REG_NOSUB)) != 0)
         return regerr;
     fmenu->length = 0;
     fmenu->curitem = 0;
