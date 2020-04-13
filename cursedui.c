@@ -62,18 +62,19 @@ int
 rendermenu(Menu *menu, WINDOW *win, int useValues)
 {
     int winwidth, winheight, startln;
-    werase(win);
     getmaxyx(win, winheight, winwidth);
     startln = menu->curitem - winheight / 2;
     startln = startln < 0 ? 0 : startln > menu->length - winheight ? menu->length - winheight : startln;
-    for (int i = startln; i < menu->length && i  < startln + winheight; i++) {
-        if (i == menu->curitem) wattron(win, A_STANDOUT);
-        if (useValues) {
-            mvwaddstr(win, i - startln, 0, ">");
-            mvwaddnstr(win, i - startln, 1, menu->items[i].value, winwidth - 1);
-        } else
-            mvwaddnstr(win, i - startln, 0, menu->items[i].display, winwidth);
-        if (i == menu->curitem) wattroff(win, A_STANDOUT);
+    for (int i = startln; i  < startln + winheight; i++) {
+        wmove(win, i - startln, 0);
+        if (i == menu->curitem) wbkgdset(win, A_STANDOUT);
+        wclrtoeol(win);
+        if (i < menu->length)
+            if (useValues)
+                wprintw(win, ">%s", menu->items[i].value);
+            else
+                wprintw(win, "%s", menu->items[i].display);
+        if (i == menu->curitem) wbkgdset(win, 0);
     }
     wrefresh(win);
     return winheight;
